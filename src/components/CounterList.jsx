@@ -8,7 +8,7 @@ class CounterList extends Component {
             counters.push(<Counter />)
         }
         return (
-            <div>{counters}</div>
+            <div className="CounterList">{counters}</div>
         )
     }
 }
