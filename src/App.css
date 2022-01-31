@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  
+  width: fit-content;
+  padding: 30px;
+  margin: 50px auto;
+  background-color:  #c0ded9;
+  border-radius: 10px;
+}
+
+.Header {
+  text-align: center;
+}
+
+.Counter {
+  width: fit-content;
+  padding: 10px;
+  margin: 30px auto;
+  background-color:  #f0f0f0;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
