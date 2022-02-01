@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import CounterList from './CounterList';
-import '../App.css';
+import Header from '../Header/index';
+import CounterList from '../CounterList/index';
+import '../../App.css';
 
 class App extends Component {
   constructor() {
@@ -30,6 +30,7 @@ class App extends Component {
     return (
       <div className='App'>
         <Header decreaseCounters={this.decreaseCounters} increaseCounters={this.increaseCounters}/>
+        <h4>{this.props.data.counters}</h4>
         {/* <CounterList counter={this.props.data.counters} /> */}
         <CounterList counter={this.state.counters} />
 
