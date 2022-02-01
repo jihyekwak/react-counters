@@ -29,8 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Header decreaseCounters={this.decreaseCounters} increaseCounters={this.increaseCounters}/>
-        <h4>{this.props.data.counters}</h4>
+        <Header decreaseCounters={this.decreaseCounters} increaseCounters={this.increaseCounters} counters={this.state.counters}/>
         {/* <CounterList counter={this.props.data.counters} /> */}
         <CounterList counter={this.state.counters} />
 
