@@ -14,6 +14,9 @@ class App extends Component {
 
   decreaseCounters = () => {
     let counters = this.state.counters - 1 ;
+    if (counters < 0) {
+      counters = 0
+    }
     this.setState({
       counters
     })
